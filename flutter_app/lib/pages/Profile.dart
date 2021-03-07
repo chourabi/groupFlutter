@@ -3,6 +3,13 @@ import 'package:flutter_app/component/Avatar.dart';
 import 'package:flutter_app/component/MyNote.dart';
 
 class ProfilePage extends StatefulWidget {
+
+  final String fullname;
+
+  const ProfilePage({Key key, this.fullname}) : super(key: key);
+
+  
+
   @override
   State<StatefulWidget> createState() {
     return _ProfilePageState();
@@ -20,11 +27,20 @@ class _ProfilePageState extends State<ProfilePage> {
     
 
     return Scaffold(
+      
       body: new Column(
         children: [
           Container(
             height: 80,
           ),
+
+          FlatButton(
+            child: Text('Back'),
+            onPressed: (){
+              Navigator.pop(context);
+            },
+          ),
+
           Container(
             child: Row(
               children: [
@@ -80,7 +96,7 @@ class _ProfilePageState extends State<ProfilePage> {
           ),
           Container(
             child: Text(
-              "RANDOM NAME",
+              widget.fullname,
               style: TextStyle(fontSize: 45),
             ),
           ),
