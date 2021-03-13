@@ -21,6 +21,8 @@ environment:
   sdk: ">=2.7.0 <3.0.0"
 
 dependencies:
+  animated_bottom_navigation_bar: 
+  curved_navigation_bar: 
   flutter:
     sdk: flutter
 

@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/pages/BottomTabs.dart';
 import 'package:flutter_app/pages/Extra.dart';
 import 'package:flutter_app/pages/Gallery.dart';
 import 'package:flutter_app/pages/HomePage.dart';
+import 'package:flutter_app/pages/MoreWidgets.dart';
 import 'package:flutter_app/pages/MyNotes.dart';
+import 'package:flutter_app/pages/NewBottomTabs.dart';
 import 'package:flutter_app/pages/Profile.dart';
 import 'package:flutter_app/pages/Tabs.dart';
 
@@ -21,7 +24,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.orange,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyTabsPage(),
+      home: MoreWidgets(),
     );
   }
 }
