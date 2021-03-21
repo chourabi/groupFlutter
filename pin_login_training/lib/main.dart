@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:pin_login_training/pages/CheckerPage.dart';
 import 'package:pin_login_training/pages/Connectivity.dart';
+import 'package:pin_login_training/pages/ImagePicker.dart';
 
 void main() {
   runApp(MyApp());
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
          visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: ConnectivityPage(),
+      home: ImagePickerPage(),
     );
   }
 }
